@@ -1,0 +1,87 @@
+.home-itinerary {
+    width: 700px;
+    .home-itinerary-title {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        padding: 40px 0;
+        letter-spacing: 1px;
+        span {
+            position: relative;
+            background-color: #fff;
+            font-size: 17px;
+            color: #666;
+            z-index: 999;
+            padding: 0 20px;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            z-index: 2;
+            background-color: #eee;
+        }
+    }
+    .home-itinerary-slider-img {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        .home-itinerary-slider-img-item {
+            padding-right: 20px;
+            img {
+                width: 160px;
+                height: 110px;
+            }
+            p {
+                font-size: 14px;
+                padding-top: 10px;
+                color: #666;
+                text-align: center;
+                word-break:break-all;
+                display:-webkit-box;
+                -webkit-line-clamp:1;
+                -webkit-box-orient:vertical;
+                overflow:hidden;
+            }
+            &:last-child {
+                padding-right: 0px;
+            }
+        }
+    }
+    .am-wingblank.am-wingblank-lg, .am-wingblank {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-itinerary {
+        width: 560px !important;
+        .home-itinerary-title {
+            padding: 32px 0 !important;
+            span {
+                font-size: 13.6px !important;
+                padding: 0 16px !important;
+            }
+            &::before {
+                height: 1.6px !important;
+            }
+        }
+        .home-itinerary-slider-img {
+            .home-itinerary-slider-img-item {
+                padding-right: 16px !important;
+                img {
+                    width: 128px !important;
+                    height: 88px !important;
+                }
+                p {
+                    font-size: 11.2px !important;
+                    padding-top: 8px !important;
+                }
+            }
+        }
+    }
+}

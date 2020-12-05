@@ -1,0 +1,62 @@
+.rightNav {
+    flex: 1;
+    .rightNav-content {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 50px;
+        .rightNav-content-top
+        ,.rightNav-content-bottom {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 6px;
+            .rightNav-content-top-title,
+            .rightNav-content-bottom-title {
+                font-size: 16px;
+                padding: 15px;
+                color: #888;
+                border-bottom: 1px solid #eee;
+            }
+            .rightNav-content-topContent
+            ,.rightNav-content-bottomContent {
+                font-size: 14px;
+                padding: 10px 0;
+                color: #666;
+                .rightNav-content-topContent-item,
+                .rightNav-content-bottomContent-item {
+                    cursor: pointer;
+                    padding: 10px 15px;
+                }
+            }
+        }
+        .rightNav-content-top {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rightNav {
+        .rightNav-content {
+            .rightNav-content-top
+            ,.rightNav-content-bottom {
+                .rightNav-content-top-title,
+                .rightNav-content-bottom-title {
+                    font-size: 12.8px !important;
+                    padding: 12px !important;
+                }
+                .rightNav-content-topContent
+                ,.rightNav-content-bottomContent {
+                    font-size: 11.2px !important;
+                    padding: 8px 0 !important;
+                    .rightNav-content-topContent-item,
+                    .rightNav-content-bottomContent-item {
+                        padding: 8px 12px !important;
+                    }
+                }
+            }
+            .rightNav-content-top {
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+}

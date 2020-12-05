@@ -1,0 +1,121 @@
+.leftNav {
+    .content {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 190px;
+        .info {
+            width: 100%;
+            padding: .5rem 0;
+            background-color: #fff;
+            .headImg {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+            }
+            .name {
+                text-align: center;
+                font-size: .3rem;
+                line-height: 1rem;
+            }
+            .autograph {
+                font-size: .23rem;
+                letter-spacing: .03rem;
+                text-align: center;
+                color: #acacac;
+            }
+            .recommend {
+                display: flex;
+                justify-content: center;
+                color: #acacac;
+                padding: .35rem 0 0 0;
+                .icon-weibo {
+                    font-size: .4rem;
+                }
+                .icon-bzhan {
+                    font-size: .4rem;
+                    padding: 0 .2rem;
+                }
+                .icon-qita {
+                    font-size: .35rem;
+                }
+            }
+        }
+        .func {
+            list-style: none;
+            width: 100%;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 0 0 6px 6px;
+            .func-item {
+                text-align: center;
+                line-height: .8rem;
+                font-size: .26rem;
+                color: #666;
+                border-top: 1px solid #efefef;
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    font-size: .26rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .leftNav {
+        .content {
+            width: 152px !important;
+            .info {
+                padding: .4rem 0 !important;
+                .headImg {
+                    img {
+                        width: 1.6rem !important;
+                        height: 1.6rem !important;
+                    }
+                }
+                .name {
+                    font-size: .24rem !important;
+                    line-height: .8rem !important;
+                }
+                .autograph {
+                    font-size: 0.184rem !important;
+                    letter-spacing: .024rem !important;
+                }
+                .recommend {
+                    padding: .28rem 0 0 0 !important;
+                    .icon-weibo {
+                        font-size: .32rem !important;
+                    }
+                    .icon-bzhan {
+                        font-size: .32rem !important;
+                        padding: 0 .16rem !important;
+                    }
+                    .icon-qita {
+                        font-size: .28rem !important;
+                    }
+                }
+            }
+            .func {
+                .func-item {
+                    line-height: .64rem !important;
+                    font-size: .208rem !important;
+                    input {
+                        font-size: .208rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

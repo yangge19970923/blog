@@ -1,0 +1,87 @@
+.home-imgRec {
+    .home-imgRec-content {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        .home-imgRec-left {
+            margin-right: 7.5px;
+            position: relative;
+            width: 342.5px;
+            height: 320px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 342.5px;
+                height: 320px;
+                background-color: #000;
+                opacity: .3;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+            &:hover::before {
+                opacity: .5;
+            }
+        }
+        .home-imgRec-right {
+            padding-left: 7.5px;
+            display: table;
+            .first,.second {
+                position: relative;
+                width: 342.5px;
+                height: 152.5px;
+                vertical-align:top;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 342.5px;
+                    height: 152.5px;
+                    background-color: #000;
+                    opacity: .3;
+                    border-radius: 6px;
+                    overflow: hidden;
+                }
+                &:hover::before {
+                    opacity: .5;
+                }
+            }
+            .first {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-imgRec {
+        .home-imgRec-content {
+            .home-imgRec-left {
+                margin-right: 6px !important;
+                width: 274px !important;
+                height: 256px !important;
+                &:before {
+                    width: 274px !important;
+                    height: 256px !important;
+                    border-radius: 4.8px !important;
+                }
+            }
+            .home-imgRec-right {
+                padding-left: 6px !important;
+                .first,.second {
+                    width: 274px !important;
+                    height: 122px !important;
+                    &:before {
+                        width: 274px !important;
+                        height: 122px !important;
+                    }
+                }
+                .first {
+                    margin-bottom: 12px !important;
+                }
+            }
+        }
+    }
+}

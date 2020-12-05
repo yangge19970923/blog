@@ -1,0 +1,69 @@
+.home-presentation {
+    width: 700px;
+    .home-presentation-title {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        padding: 40px 0;
+        letter-spacing: 1px;
+        span {
+            position: relative;
+            background-color: #fff;
+            font-size: 17px;
+            color: #666;
+            z-index: 999;
+            padding: 0 20px;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            z-index: 2;
+            background-color: #eee;
+        }
+    }
+    .home-presentation-content {
+        width: 100%;
+        .home-presentation-content-item {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            background-color: skyblue;
+            font-size: 15px;
+            color: #fff;
+            align-items: center;
+            padding: 0 20px;
+            .icon-cuowu {
+                font-size: 30px;
+                color:#fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home-presentation {
+        width: 560px !important;
+        .home-presentation-title {
+            padding: 32px 0 !important;
+            span {
+                font-size: 13.6px !important;
+                padding: 0 16px !important;
+            }
+        }
+        .home-presentation-content {
+            .home-presentation-content-item {
+                height: 32px !important;
+                font-size: 12px !important;
+                padding: 0 16px !important;
+                .icon-cuowu {
+                    font-size: 24px !important;
+                }
+            }
+        }
+    }
+}
