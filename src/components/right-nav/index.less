@@ -1,4 +1,5 @@
 .rightNav {
+    display: block;
     flex: 1;
     .rightNav-content {
         position: -webkit-sticky; /* Safari */
@@ -36,6 +37,7 @@
 
 @media screen and (max-width: 1200px) {
     .rightNav {
+        display: block;
         .rightNav-content {
             .rightNav-content-top
             ,.rightNav-content-bottom {
@@ -58,5 +60,11 @@
                 margin-bottom: 16px !important;
             }
         }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .rightNav {
+        display: none;
     }
 }

@@ -117,3 +117,53 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .home-newArticle {
+        width: 100% !important;
+        .home-newArticle-title {
+            span {
+                font-size: .35rem !important;
+            }
+            &::before {
+                height: 1.6px !important;
+            }
+        }
+        .home-newArticle-content {
+            .home-newArticle-content-item {
+                padding: 24px 0 !important;
+                .home-newArticle-content {
+                    font-size: 23px !important;
+                    letter-spacing: 1.6px;
+                }
+                .home-newArticle-content-introduction {
+                    font-size: 15px !important;
+                    letter-spacing: 2px !important;
+                    padding: 12px 0 !important;
+                }
+                .home-newArticle-content-img {
+                    .home-newArticle-content-img-list {
+                        padding-right: 10px !important;
+                        img {
+                            width: 100% !important;
+                            height: 100px !important;
+                        }
+                        &:last-child {
+                            padding-right: 0 !important;
+                        }
+                    }
+                }
+                .home-newArticle-content-class {
+                    font-size: 9.6px !important;
+                    padding: 12px 0 0 12px !important;
+                }
+                &:first-child {
+                    padding-top: 0 !important;
+                }
+            }
+        }
+        .home-newArticle-bg {
+            padding-top: 24px !important;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.detail-article {
+    width: calc(100% - 60px);
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+    .detail-article-title {
+        font-size: 32px;
+        color: #444;
+        padding-bottom: 20px;
+    }
+    .detail-article-info {
+        display: flex;
+        padding-bottom: 20px;
+        width: 100%;
+        .detail-article-info-item {
+            padding: 0 15px;
+            font-size: 13px;
+            border-right: 1px solid #eee;
+            color: #666;
+            .iconfont {
+                font-size: 18px;
+                padding-right: 5px;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .detail-article-border {
+        width: 100px;
+        border: 1px solid #eee;
+    }
+    .detail-article-content {
+        padding: 30px 0;
+    }
+    .detail-article-pay {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .detail-article-pay-content {
+            width: 140px;
+            border-radius: 20px 20px 20px 20px;
+            font-size: 12px;
+            border: 1px solid #bbb;
+            text-align: center;
+            padding: 10px 0;
+            color: #666;
+            cursor: pointer;
+            .icon-qianbaoqiandaiyue {
+                font-size: 15px;
+                padding-right: 5px;
+            }
+            &:hover {
+                background-color:#44cef6;
+                color: #fff;
+                border: 1px solid #44cef6;
+            }
+        }
+    } 
+    .detail-article-like {
+        display: flex;
+        width: 100%;
+        padding: .2rem 0 .4rem 0;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        .detail-article-likeLeft {
+            font-size: 14px;
+            color: #ccc;
+            .iconfont {
+                font-size: 16px;
+                padding-right: 10px;
+            }
+        }
+        .detail-article-likeRight {
+            font-size: 14px;
+            .iconfont {
+                font-size: 18px;
+                padding-right: 10px;
+            }
+            .icon-weibo {
+                color: #e32036;
+            }
+            .icon-icon-weixin {
+                color: #4fdf94;
+            }
+            .icon-qq {
+                color: #10b7f5;
+            }
+        }
+    }
+    .detail-article-capther {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 14px;
+        padding-top: 30px;
+        color: #666;
+    }
+}

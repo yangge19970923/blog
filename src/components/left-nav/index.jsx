@@ -28,6 +28,9 @@ export default class LeftNav extends Component {
                         <li className="func-item">其他主题</li>
                         <li className="func-item"><input type="text" placeholder="搜索"/></li>
                     </ul>
+                    <div className="func-click">
+                        <span className="iconfont icon-gongneng"></span>
+                    </div>
                 </div>
             </div>
         )

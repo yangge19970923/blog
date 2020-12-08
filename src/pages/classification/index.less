@@ -1,0 +1,175 @@
+.classification {
+    display: flex;
+    width: 1010px;
+    .classification-center {
+        .classification-content {
+            box-sizing: border-box;
+            width: 780px;
+            background-color: #fff;
+            margin: 0 20px;
+            // padding: 40px;
+            .classification-content-title{
+                width: 750px;
+                padding: 15px;
+                font-size: 16px;
+                color: #888;
+                border-bottom: 1px solid #eee;
+            }
+            .classification-content-detail {
+                padding: 30px 25px;
+                width: 730px;
+                .classification-content-detailItem {
+                    width: 100%;
+                    padding: 25px 0;
+                    border-bottom: 1px solid #eee;
+                    cursor: pointer;
+                    .classification-content-detailItem-title {
+                        font-size: 22px;
+                        color: #444;
+                        font-weight: normal;
+                        // padding-bottom: 10px;
+                    }
+                    .classification-content-detailItem-introduction {
+                        padding: 15px 0;
+                        font-size: 15px;
+                        color: #666;
+                        letter-spacing: 2px;
+                    }
+                    .classification-content-detailItem-img {
+                        display: flex;
+                        width: 100%;
+                        .classification-content-detailItem-imgItem {
+                            width: 230px;
+                            padding-right: 20px;
+                            img {
+                                width: 100%;
+                                height: 120px;
+                            }
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                    .classification-content-detailItem-time {
+                        font-size: 13px;
+                        color: #666;
+                        padding-top: 10px;
+                    }
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    &:last-child {
+                        border-bottom:  none;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .classification {
+        display: flex;
+        width: 808px;
+        .classification-center {
+            .classification-content {
+                width: 624px;
+                margin: 0 16px;
+                .classification-content-title{
+                    width: 600px;
+                    padding: 12px;
+                    font-size: 12.8px;
+                }
+                .classification-content-detail {
+                    padding: 24px 20px;
+                    width: 584px;
+                    .classification-content-detailItem {
+                        width: 100%;
+                        padding: 20px 0;
+                        cursor: pointer;
+                        .classification-content-detailItem-title {
+                            font-size: 17.6px;
+                        }
+                        .classification-content-detailItem-introduction {
+                            padding: 12px 0;
+                            font-size: 12px;
+                            letter-spacing: 1.6px;
+                        }
+                        .classification-content-detailItem-img {
+                            .classification-content-detailItem-imgItem {
+                                width: 184px;
+                                padding-right: 16px;
+                                img {
+                                    width: 100%;
+                                    height: 96px;
+                                }
+                            }
+                        }
+                        .classification-content-detailItem-time {
+                            font-size: 10.4px;
+                            color: #666;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .classification {
+        width: 100% !important;
+        .classification-center {
+            width: 100%;
+            .classification-content {
+                box-sizing: border-box;
+                width: 100% !important;
+                background-color: #fff;
+                margin: 0 !important;
+                // padding: 32px !important;
+                .classification-content-title{
+                    width: calc(100% - .8rem);
+                    padding: .4rem;
+                    font-size: .35rem;
+                }
+                .classification-content-detail {
+                    padding: .4rem;
+                    width: calc(100% - .8rem);
+                    .classification-content-detailItem {
+                        width: 100%;
+                        padding: 20px 0;
+                        cursor: pointer;
+                        .classification-content-detailItem-title {
+                            font-size: 17.6px;
+                        }
+                        .classification-content-detailItem-introduction {
+                            padding: 12px 0;
+                            font-size: 12px;
+                            letter-spacing: 1.6px;
+                            line-height: 1.5;
+                        }
+                        .classification-content-detailItem-img {
+                            .classification-content-detailItem-imgItem {
+                                width: 33%;
+                                padding-right: 16px;
+                                img {
+                                    width: 100%;
+                                    height: 2rem;
+                                }
+                            }
+                        }
+                        .classification-content-detailItem-time {
+                            font-size: 10.4px;
+                            color: #666;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

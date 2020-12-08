@@ -1,6 +1,20 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
+
 import './index.less'
 export default class RightNav extends Component {
+    state = {
+        recentArticles: [],
+        classList:[]
+    }
+
+    componentDidMount () {
+        this.setState({
+            recentArticles: [" 剪影流殇，光影华年", "我想走遍世界每一个角落", "2020年初随笔", "如许相诺，谁念", "下辈子，我想当个主子"],
+            classList: ["工作笔记", "心情随笔", "旅行日记", "胡吃海塞"]
+        })
+    }
+
     render() {
         return (
             <div className="rightNav">
@@ -10,21 +24,13 @@ export default class RightNav extends Component {
                             近期文章
                         </div>
                         <div className="rightNav-content-topContent">
-                            <div className="rightNav-content-topContent-item">
-                                剪影流殇，光影华年
-                            </div>
-                            <div className="rightNav-content-topContent-item">
-                                我想走遍世界每一个角落
-                            </div>
-                            <div className="rightNav-content-topContent-item">
-                                2020年初随笔
-                            </div>
-                            <div className="rightNav-content-topContent-item">
-                                如许相诺，谁念
-                            </div>
-                            <div className="rightNav-content-topContent-item">
-                                下辈子，我想当个主子
-                            </div>
+                            {
+                                this.state.recentArticles.map(item => (
+                                    <div key={item} className="rightNav-content-topContent-item">
+                                        {item}
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="rightNav-content-bottom">
@@ -32,18 +38,15 @@ export default class RightNav extends Component {
                             分类目录
                         </div>
                         <div className="rightNav-content-bottomContent">
-                            <div className="rightNav-content-bottomContent-item">
-                                工作笔记
-                            </div>
-                            <div className="rightNav-content-bottomContent-item">
-                                心情随笔
-                            </div>
-                            <div className="rightNav-content-bottomContent-item">
-                                旅行日记
-                            </div>
-                            <div className="rightNav-content-bottomContent-item">
-                                胡吃海塞
-                            </div>
+                            {
+                                this.state.classList.map((item, index) => (
+                                    <div key={item} className="rightNav-content-bottomContent-item">
+                                        <Link to="/classification">
+                                            {item}
+                                        </Link>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

@@ -70,13 +70,16 @@
                 }
             }
         }
+        .func-click {
+            display: none;
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .leftNav {
         .content {
-            width: 152px !important;
+            width: 152px;
             .info {
                 padding: .4rem 0 !important;
                 .headImg {
@@ -114,6 +117,64 @@
                     input {
                         font-size: .208rem !important;
                     }
+                }
+            }
+            .func-click {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .leftNav {
+        width: 100%;
+        .content {
+            width: 100% !important;
+            .info {
+                padding: 0;
+                .headImg {
+                    img {
+                        width: 2.2rem !important;
+                        height: 2.2rem !important;
+                    }
+                }
+                .name {
+                    font-size: .45rem !important;
+                    line-height: 1rem !important;
+                }
+                .autograph {
+                    font-size: 0.35rem !important;
+                }
+                .recommend {
+                    padding: .3rem 0 0 0 !important;
+                    .icon-weibo {
+                        font-size: .4rem !important;
+                    }
+                    .icon-bzhan {
+                        font-size: .65rem !important;
+                        padding: 0 .25rem !important;
+                    }
+                    .icon-qita {
+                        font-size: .36rem !important;
+                    }
+                }
+            }
+            .func {
+                display: none !important;
+            }
+            .func-click {
+                display: block;
+                width: 100%;
+                border-radius: 0 0 6px 6px;
+                padding: 7px 0;
+                text-align: center;
+                background-color: #fff;
+                border-top: 1px solid #eee;
+                margin-bottom: 20px;
+                .icon-gongneng {
+                    font-size: .6rem;
+                    color: #888;
                 }
             }
         }
