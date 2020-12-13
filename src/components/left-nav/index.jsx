@@ -1,19 +1,49 @@
 import React, {Component} from 'react'
+import { withRouter } from 'react-router-dom'
 import './index.less'
 
-import headImg from '../../assets/img/headImg.png'
+export default withRouter(class LeftNav extends Component {
+    state = {
+        netName:'衫小小寨',
+        autograph: '衫小寨的DEMO站',
+        headImgUrl:'headImg.png',
+        func:[
+            {
+                id:1,
+                name: '首页',
+                url: '/home'
+            },
+            {
+                id:2,
+                name: '我的',
+                url: '/mine'
+            },
+            {
+                id:3,
+                name: '编辑',
+                url: '/edit'
+            },
+            {
+                id:4,
+                name: '登录',
+                url: '/login'
+            }
+        ]
+    }
+    toNextPage(item) {
+        this.props.history.push(item.url);
+    }
 
-export default class LeftNav extends Component {
     render() {
         return (
             <div className="leftNav">
                 <div className="content round">
                     <div className="info">
                         <div className="headImg">
-                            <img src={headImg} alt=""/>
+                            <img src={require("../../assets/img/" + this.state.headImgUrl).default} alt=""/>
                         </div>
-                        <p className="name">衫小小寨</p>
-                        <p className="autograph">衫小寨的DEMO站</p>
+                        <p className="name">{this.state.netName}</p>
+                        <p className="autograph">{this.state.autograph}</p>
                         <div className="recommend">
                             <span className="iconfont icon-weibo"></span>
                             <span className="iconfont icon-bzhan"></span>
@@ -21,11 +51,11 @@ export default class LeftNav extends Component {
                         </div>
                     </div>
                     <ul className="func">
-                        <li className="func-item">首页</li>
-                        <li className="func-item">示例页面</li>
-                        <li className="func-item">其他版式</li>
-                        <li className="func-item">下载安装</li>
-                        <li className="func-item">其他主题</li>
+                        {
+                            this.state.func.map(item => (
+                                <li className="func-item" key={item.id} onClick={ e => this.toNextPage(item)}>{item.name}</li>
+                            ))
+                        }
                         <li className="func-item"><input type="text" placeholder="搜索"/></li>
                     </ul>
                     <div className="func-click">
@@ -35,4 +65,4 @@ export default class LeftNav extends Component {
             </div>
         )
     }
-}
+})

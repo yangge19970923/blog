@@ -6,6 +6,7 @@ import Home from './pages/home'
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min"
 import Classification from "./pages/classification"
 import Detail from "./pages/detail"
+import Mine from "./pages/mine"
 
 export default class App extends Component {
     render () {
@@ -17,6 +18,7 @@ export default class App extends Component {
                         <Route path="/home" component={Home}></Route>
                         <Route path="/classification" component = {Classification}></Route>
                         <Route path="/detail" component = {Detail}></Route>
+                        <Route path="/mine" component = {Mine}></Route>
                         <Redirect to="/home"></Redirect>
                     </Switch>
                 </BrowserRouter>

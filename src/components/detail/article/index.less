@@ -41,7 +41,7 @@
         width: 100%;
         .detail-article-pay-content {
             width: 140px;
-            border-radius: 20px 20px 20px 20px;
+            border-radius: 20px;
             font-size: 12px;
             border: 1px solid #bbb;
             text-align: center;
@@ -97,5 +97,129 @@
         font-size: 14px;
         padding-top: 30px;
         color: #666;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    width: calc(100% - 48px);
+    padding: 32px 24px 24px 24px;
+    .detail-article-title {
+        font-size: 25.6px;
+        padding-bottom: 16px;
+    }
+    .detail-article-info {
+        padding-bottom: 16px;
+        .detail-article-info-item {
+            padding: 0 12px;
+            font-size: 10.4px;
+            .iconfont {
+                font-size: 14.4px;
+                padding-right: 4px;
+            }
+        }
+    }
+    .detail-article-border {
+        width: 80px;
+    }
+    .detail-article-content {
+        padding: 24px 0;
+    }
+    .detail-article-pay {
+        .detail-article-pay-content {
+            width: 112px;
+            border-radius: 16px;
+            font-size: 9.6px;
+            padding: 8px 0;
+            .icon-qianbaoqiandaiyue {
+                font-size: 12px;
+                padding-right: 4px;
+            }
+        }
+    }
+    .detail-article-like {
+        padding: .16rem 0 .32rem 0;
+        .detail-article-likeLeft {
+            font-size: 11.2px;
+            .iconfont {
+                font-size: 14.4px;
+                padding-right: 8px;
+            }
+        }
+        .detail-article-likeRight {
+            font-size: 11.2px;
+            .iconfont {
+                font-size: 14.4px;
+                padding-right: 8px;
+            }
+        }
+    }
+    .detail-article-capther {
+        font-size: 11.2px;
+        padding-top: 24px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    width: calc(100% - .64rem);
+    padding: .45rem .32rem .32rem .32rem;
+    .detail-article-title {
+        font-size: .6rem;
+        padding-bottom: .22rem;
+    }
+    .detail-article-info {
+        padding-bottom: .22rem;
+        .detail-article-info-item {
+            padding: 0 .15rem;
+            font-size: .13rem;
+            .iconfont {
+                font-size: .18rem;
+                padding-right: .05rem;
+            }
+        }
+        .class {
+            display: none;
+        }
+        .name {
+            display: none;
+        }
+    }
+    .detail-article-border {
+        width: 1.04rem;
+    }
+    .detail-article-content {
+        padding: .31rem 0;
+    }
+    .detail-article-pay {
+        .detail-article-pay-content {
+            width: 1.4rem;
+            border-radius: .2rem;
+            font-size: .12rem;
+            padding: 8px 0;
+            .icon-qianbaoqiandaiyue {
+                font-size: .1rem;
+                padding-right: .05rem;
+            }
+        }
+    }
+    .detail-article-like {
+        padding: .16rem 0 .32rem 0;
+        .detail-article-likeLeft {
+            font-size: .14rem;
+            .iconfont {
+                font-size: .18rem;
+                padding-right: .1rem;
+            }
+        }
+        .detail-article-likeRight {
+            font-size: .14rem;
+            .iconfont {
+                font-size: .18rem;
+                padding-right: .1rem;
+            }
+        }
+    }
+    .detail-article-capther {
+        font-size: .14rem;
+        padding-top: .31rem;
     }
 }

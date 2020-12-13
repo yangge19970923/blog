@@ -1,0 +1,156 @@
+.detail-comment {
+    width: 100%;
+    margin: 20px 0;
+    .detail-comment-title {
+        font-size: 15px;
+        padding: 15px 30px;
+        color: #666;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        border-radius: 6px 6px 0 0;
+    }
+    .detail-comment-cotent {
+        width: calc(100% - 60px);
+        padding: 40px 30px;
+        background-color: #fff;
+        border-radius: 0 0 6px 6px;
+        .detail-comment-cotent-empty {
+            padding: 70px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #bbb;
+            letter-spacing: 1.6px;
+            .icon-shafa {
+                display: block;
+                font-size: 50px;
+                padding-bottom: 20px;
+            }
+        }
+        .detail-comment-cotent-speak {
+            width: 100%;
+            .detail-comment-cotent-speakC {
+                width: 100%;
+                .detail-comment-cotent-speakC-item {
+                    display: flex;
+                    width: 100%;
+                    .detail-comment-cotent-speakC-item-speakImg {
+                        padding: 0 10px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .detail-comment-cotent-speakC-item-content{
+                        width: 100%;
+                        .detail-comment-cotent-speakC-item-contentName {
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                        }
+                        .detail-comment-cotent-speakC-item-contentTime {
+                            padding-top: 5px;
+                            font-size: 12px;
+                            color: #666;
+                            span {
+                                &:first-child {
+                                    padding-right: 15px;
+                                }
+                                &:last-child {
+                                    cursor: pointer;
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                        .detail-comment-cotent-speakC-item-contentSay {
+                            padding: 20px 0;
+                            font-size: 16px;
+                            letter-spacing: 1.6px;
+                            color: #666;
+                        }
+                        .detail-comment-cotent-speakC-child {
+                            width: 100%;
+                            padding-top: 20px;
+                            background-color: rgba(193,193,193,0.1);
+                            .detail-comment-cotent-speakC-child-time {
+                                padding: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .detail-comment-cotent-speakImg {
+                padding: 0 10px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .detail-comment-say {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #fff;
+        align-items: center;
+        .detail-comment-say-icon {
+            padding: 20px;
+            .icon-touxiang1 {
+                background-color: #bbb;
+                font-size: 40px;
+                border-radius: 50%;
+                color: #fff;
+                border: 0;
+            }
+        }
+        .detail-comment-say-said {
+            width: 100%;
+            font-size: 14px;
+            color: #bbb;
+            cursor: pointer;
+            .detail-comment-say-saidC {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: calc(100%-20px);
+                padding-right: 20px;
+                .icon-cuohao {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .detail-comment-tosat {
+        border-radius: 0 0 6px 6px;
+         width: calc(100% - 40px);
+         padding: 0 20px 20px 20px; 
+         background-color: #fff;
+         textarea {
+             width: calc(100% - 22px);
+             height: 80px;
+             border: 1px solid #ddd;
+             padding: 10px;
+             font-size: 14px;
+             color: #666;
+             resize: vertical;
+             &:focus {
+                border: 1px solid #44cef6;
+             }
+         }
+         .detail-comment-tosat-button {
+             padding-top: 20px;
+             text-align: right;
+             button {
+                 width: 150px;
+                 height: 40px;
+                 font-size: 14px;
+                 background-color: #44cef6;
+                 border-radius: 6px;
+                 border: none;
+                 color: #fff;
+                 cursor: pointer;
+             }
+         }
+    }
+}
