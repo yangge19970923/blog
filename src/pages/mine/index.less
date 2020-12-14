@@ -1,0 +1,42 @@
+.detail {
+    display: flex;
+    width: 1010px;
+    .detail-center {
+        .detail-content {
+            box-sizing: border-box;
+            width: 780px;
+            margin: 0 20px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .detail {
+        display: flex;
+        width: 808px !important;
+        .detail-center {
+            .detail-content {
+                box-sizing: border-box;
+                width: 624px !important;
+                margin: 0 16px !important;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .detail {
+        width: 100% !important;
+        .detail-center {
+            width: 100%;
+            .detail-content {
+                box-sizing: border-box;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+        
+    }
+}

@@ -15,7 +15,7 @@ export default withRouter(class LeftNav extends Component {
             },
             {
                 id:2,
-                name: '我的',
+                name: '我的主页',
                 url: '/mine'
             },
             {
@@ -31,6 +31,7 @@ export default withRouter(class LeftNav extends Component {
         ]
     }
     toNextPage(item) {
+        console.log(item);
         this.props.history.push(item.url);
     }
 

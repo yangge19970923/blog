@@ -13,15 +13,15 @@ export default class App extends Component {
         return (
             <div className="app">
                 <LeftNav />
-                <BrowserRouter>
-                    <Switch>
+                {/* <BrowserRouter>
+                    <Switch> */}
                         <Route path="/home" component={Home}></Route>
                         <Route path="/classification" component = {Classification}></Route>
                         <Route path="/detail" component = {Detail}></Route>
-                        <Route path="/mine" component = {Mine}></Route>
+                        <Route path="/mine" exact component = {Mine}></Route>
                         <Redirect to="/home"></Redirect>
-                    </Switch>
-                </BrowserRouter>
+                    {/* </Switch>
+                </BrowserRouter> */}
             </div>
         )
     }

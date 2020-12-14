@@ -1,11 +1,12 @@
 import react, {Component} from "react"
 import Quill from 'quill';
+import { withRouter } from 'react-router-dom'
 import 'quill/dist/quill.snow.css';
 
 import "./index.less"
 import "./edit.less"
 
-export default class Edit extends Component {
+export default withRouter(class Edit extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -19,6 +20,10 @@ export default class Edit extends Component {
         let {value}=this.state;
         value = this.editor.root.innerHTML;
         this.setState({value});
+    }
+
+    handleToHome(e) {
+        this.props.history.push('/home');
     }
 
     componentDidMount() {
@@ -61,7 +66,7 @@ export default class Edit extends Component {
         const editor =this.editor= new Quill(textbox,options);
         const {value}=this.state;
         if (value) editor.clipboard.dangerouslyPasteHTML(value);
-        editor.on('text-change', this.handleChange.bind(this));
+        editor.on('text-change', this.handleChange.bind(this)); 
     }
     render() {
         return (
@@ -71,10 +76,10 @@ export default class Edit extends Component {
                         <input type="text" id="edit-title" defaultValue={this.state.title} placeholder="请输入标题"/>
                     </label>
                     <span>发布文章</span>
-                    <span>回到首页</span>
+                    <span onClick={e => this.handleToHome(e)}>回到首页</span>
                 </div>
                 <div ref="textarea"></div>
             </div>
         )
     }
-}
+})
